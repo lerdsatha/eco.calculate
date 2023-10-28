@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO</title>
+    <link rel="shortcut icon" type="image/png" href='favicon.ico'>
+
+<style>
+    div {
+        display: flex;
+        justify-content: left;
+        margin: 20px;
+        padding: 10px 5px 10px 35px;
+        font-family: phetsarath OT;
+        width: 400px;
+        height: 1150px;
+        border: 1px solid rgb(68, 67, 98);
+        border-radius: 5px;
+        box-shadow: 4px 7px 7px 0px rgb(228, 223, 217);
+        background-color: rgb(195, 140, 205);
+
+        flex-wrap: wrap;
+        font-size: 17px;
+
+    }
+
+    div span {
+        margin: 10px 2px 5px;
+        padding-top: 0%;
+    }
+
+    div #harn {
+        width: 200px;
+        height: 30px;
+        margin-top: 5px;
+        font-family: phetsarath OT;
+        margin-left: 80px;
+
+
+    }
+
+    button {
+        margin-bottom: 10px;
+        margin-left: 200px;
+        width: 150px;
+        height: 50px;
+        border-radius: 5PX;
+        background-color: aliceblue;
+        font-family: phetsarath OT;
+
+
+
+    }
+
+    div.luam {
+        min-width: 100%;
+        background-color: aliceblue;
+        margin: 0px;
+        min-height: 100%;
+        height: 100%;
+
+    }
+
+    span#xx {
+        width: 200px;
+        height: 120px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+
+
+    }
+
+    span#yy {
+        width: 200px;
+        height: 120px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+
+
+    }
+
+    span#y-yi {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+
+
+    }
+
+    span#x-xi {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+
+
+    }
+
+    span#x-yi {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+
+
+    }
+
+    span#x-xi2 {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+
+
+    }
+
+    .u {
+        width: 100px;
+
+        font-family: phetsarath OT;
+
+    }
+
+    span#yi- {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+    }
+
+    span#ui {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+    }
+
+    span#yi-y2 {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+    }
+
+    span#y-yi2 {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+    }
+
+    span#ui2 {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+    }
+</style>
+</head>
+
+
+<body>
+    <div>
+        <span class="y">
+            <p>ຈຳນວນ y</p>
+            <input type="text" id="1y" placeholder="1"><br><br>
+            <input type="text" id="2y" placeholder="2"><br><br>
+            <input type="text" id="3y" placeholder="3"><br><br>
+            <input type="text" id="4y" placeholder="4"><br><br>
+            <input type="text" id="5y" placeholder="5"><br><br>
+            <input type="text" id="6y" placeholder="6"><br><br>
+            <input type="text" id="7y" placeholder="7"><br><br>
+            <input type="text" id="8y" placeholder="8"><br><br>
+            <input type="text" id="9y" placeholder="9"><br><br>
+            <input type="text" id="10y" placeholder="10"><br><br>
+            <input type="text" id="11y" placeholder="11"><br><br>
+            <input type="text" id="12y" placeholder="12"><br><br>
+            <input type="text" id="13y" placeholder="13"><br><br>
+            <input type="text" id="14y" placeholder="14"><br><br>
+            <input type="text" id="15y" placeholder="15"><br><br>
+            <input type="text" id="16y" placeholder="16"><br><br>
+            <input type="text" id="17y" placeholder="17"><br><br>
+            <input type="text" id="18y" placeholder="18"><br><br>
+            <input type="text" id="19y" placeholder="19"><br><br>
+            <input type="text" id="20y" placeholder="20"><br><br>
+
+
+
+        </span>
+
+        <span class="x">
+            <p>ຈຳນວນ x</p>
+            <input type="text" id="1x" placeholder="1"><br><br>
+            <input type="text" id="2x" placeholder="2"><br><br>
+            <input type="text" id="3x" placeholder="3"><br><br>
+            <input type="text" id="4x" placeholder="4"><br><br>
+            <input type="text" id="5x" placeholder="5"><br><br>
+            <input type="text" id="6x" placeholder="6"><br><br>
+            <input type="text" id="7x" placeholder="7"><br><br>
+            <input type="text" id="8x" placeholder="8"><br><br>
+            <input type="text" id="9x" placeholder="9"><br><br>
+            <input type="text" id="10x" placeholder="10"><br><br>
+            <input type="text" id="11x" placeholder="11"><br><br>
+            <input type="text" id="12x" placeholder="12"><br><br>
+            <input type="text" id="13x" placeholder="13"><br><br>
+            <input type="text" id="14x" placeholder="14"><br><br>
+            <input type="text" id="15x" placeholder="15"><br><br>
+            <input type="text" id="16x" placeholder="16"><br><br>
+            <input type="text" id="17x" placeholder="17"><br><br>
+            <input type="text" id="18x" placeholder="18"><br><br>
+            <input type="text" id="19x" placeholder="19"><br><br>
+            <input type="text" id="20x" placeholder="20"><br><br>
+
+
+
+        </span><br>
+
+
+
+
+        <input type="text" id="harn" placeholder="ຈຳນວນ (n)"><br>
+
+    </div>
+    <span class="u">
+
+        <label> ເບຕາ(B1)</label><br>
+        <input type="text" id="B1" placeholder="ເບຕາ(B1)"><br><br>
+        <label> ເບຕາ(B0)</label><br>
+        <input type="text" id="B0" placeholder="ເບຕາ (B0)"><br><br>
+
+    </span>
+    <button id="submit">ສົ່ງຄຳຕອບ
+    </button><br>
+    <div class="luam">
+        <span id="xx">
+            <label>ຄ່າສະເລ່ຍ(x) </label><br>
+            <label id="outcome"></label>
+        </span>
+        <span id="yy">
+            <label>ຄ່າສະເລ່ຍ(Y) </label><br>
+            <label id="outcomes"></label><br>
+        </span>
+
+        <span id="y-yi">
+            <label>(yi - y_) </label><br>
+            <label id="y-y"></label>
+        </span>
+
+        <span id="x-xi">
+            <label>(xi - x_) </label><br>
+            <label id="x-x"></label>
+        </span>
+        <span id="x-yi">
+            <label>(xi - x_) * (yi - y_)</label><br>
+            <label id="x-y"></label>
+
+        </span>
+        <span id="x-xi2">
+            <label>(xi- x_)**2 </label><br>
+            <label id="x-x2"></label>
+        </span>
+        <span id="yi-">
+            <label>y' </label><br>
+            <label id='y-i'></label>
+        </span>
+        <span id="ui">
+            <label>ui' </label><br>
+            <label id='uii'></label>
+        </span>
+        <span id="yi-y2">
+            <label>(yi - y_)**2 </label><br>
+            <label id='yi-yii'></label>
+        </span>
+        <span id="y-yi2">
+            <label>(y'-y_)**2 </label><br>
+            <label id='y-yii2'></label>
+        </span>
+        <span id="ui2">
+            <label>ui**2 </label><br>
+            <label id='uii2'></label>
+        </span>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.getElementById('submit').onclick = function () {
+            let outcomesy = Number(outcomes)
+
+            let ones = document.getElementById('1x').value;
+            ones = Number(ones)
+            let twos = document.getElementById('2x').value;
+            twos = Number(twos)
+            let threes = document.getElementById('3x').value;
+            threes = Number(threes)
+            let fours = document.getElementById('4x').value;
+            fours = Number(fours)
+            let fives = document.getElementById('5x').value;
+            fives = Number(fives)
+            let sixs = document.getElementById('6x').value;
+            sixs = Number(sixs)
+            let sevens = document.getElementById('7x').value;
+            sevens = Number(sevens)
+            let eights = document.getElementById('8x').value;
+            eights = Number(eights)
+            let nines = document.getElementById('9x').value;
+            nines = Number(nines)
+            let tens = document.getElementById('10x').value;
+            tens = Number(tens)
+            let elevens = document.getElementById('11x').value;
+            elevens = Number(elevens)
+            let tweles = document.getElementById('12x').value;
+            tweles = Number(tweles)
+            let thirtys = document.getElementById('13x').value;
+            thirtys = Number(thirtys)
+            let fourtys = document.getElementById('14x').value;
+            fourtys = Number(fourtys)
+            let fivetys = document.getElementById('15x').value;
+            fivetys = Number(fivetys)
+            let sixtys = document.getElementById('16x').value;
+            sixtys = Number(sixtys)
+            let seventys = document.getElementById('17x').value;
+            seventys = Number(seventys)
+            let eightys = document.getElementById('18x').value;
+            eightys = Number(eightys)
+            let ninetys = document.getElementById('19x').value;
+            ninetys = Number(ninetys)
+            let twentys = document.getElementById('20x').value;
+            twentys = Number(twentys)
+
+
+
+
+            //
+
+            let oney = document.getElementById('1y').value;
+            oney = Number(oney)
+            let twoy = document.getElementById('2y').value;
+            twoy = Number(twoy)
+            let threey = document.getElementById('3y').value;
+            threey = Number(threey)
+            let foury = document.getElementById('4y').value;
+            foury = Number(foury)
+            let fivey = document.getElementById('5y').value;
+            fivey = Number(fivey)
+            let sixy = document.getElementById('6y').value;
+            sixy = Number(sixy)
+            let seveny = document.getElementById('7y').value;
+            seveny = Number(seveny)
+            let eight = document.getElementById('8y').value;
+            eight = Number(eight)
+            let niney = document.getElementById('9y').value;
+            niney = Number(niney)
+            let teny = document.getElementById('10y').value;
+            teny = Number(teny)
+            let eleveny = document.getElementById('11y').value;
+            eleveny = Number(eleveny)
+            let tweley = document.getElementById('12y').value;
+            tweley = Number(tweley)
+            let thirty = document.getElementById('13y').value;
+            thirty = Number(thirty)
+            let fourty = document.getElementById('14y').value;
+            fourty = Number(fourty)
+            let fivety = document.getElementById('15y').value;
+            fivety = Number(fivety)
+            let sixty = document.getElementById('16y').value;
+            sixty = Number(sixty)
+            let seventy = document.getElementById('17y').value;
+            seventy = Number(seventy)
+            let eighty = document.getElementById('18y').value;
+            eighty = Number(eighty)
+            let ninety = document.getElementById('19y').value;
+            ninety = Number(ninety)
+            let twenty = document.getElementById('20y').value;
+            twenty = Number(twenty)
+
+            let harns = document.getElementById('harn').value;
+            harns = Number(harns)
+            //
+
+
+            let b_1 = document.getElementById('B1').value;
+            b_1 = Number(b_1)
+            let b_0 = document.getElementById('B0').value;
+            b_0 = Number(b_0)
+
+            //
+
+
+
+
+
+
+
+
+
+
+
+
+
+            let outcomex = (ones + twos + threes + fours + fives + sixs + sevens + eights + nines + tens + elevens + tweles + thirtys + fourtys + fivetys + sixtys + seventys + eightys + ninetys + twentys) / harns
+            //
+            let outcomey = (oney + twoy + threey + foury + fivey + sixy + seveny + eight + niney + teny + eleveny + tweley + thirty + fourty + fivety + sixty + seventy + eighty + ninety + twenty) / harns
+            //
+            let y_y = '1. ' + (oney - outcomey) + '<br>' + '2.  ' + (twoy - outcomey) + '<br>' + '3.  ' + (threey - outcomey) + '<br>' + '4.  ' + (foury - outcomey) + '<br>' + '5.  ' + (fivey - outcomey) + '<br>' +
+                '6.  ' + (sixy - outcomey) + '<br>' + '7.  ' + (seveny - outcomey) + '<br>' + '8.  ' + (eight - outcomey) + '<br>' + '9.  ' + (niney - outcomey) + '<br>' + '10.  ' + (teny - outcomey) + '<br>'
+                + '11.  ' + (eleveny - outcomey) + '<br>' + '12.  ' + (tweley - outcomey) + '<br>' + '13.  ' + (thirty - outcomey) + '<br>' + '14.  ' + (fourty - outcomey) + '<br>' + '15.  ' + (fivety - outcomey) + '<br>' +
+                '16.  ' + (sixty - outcomey) + '<br>' + '17.  ' + (seventy - outcomey) + '<br>' + '18.  ' + (eighty - outcomey) + '<br>' + '19.  ' + (ninety - outcomey) + '<br>' + '20.  ' + (twenty - outcomey);
+
+
+            //
+            let x_x = '1. ' + (ones - outcomex) + '<br>' + '2.  ' + (twos - outcomex) + '<br>' + '3.  ' + (threes - outcomex) + '<br>' + '4.  ' + (fours - outcomex) + '<br>' + '5.  ' + (fives - outcomex) + '<br>' +
+                '6.  ' + (sixs - outcomex) + '<br>' + '7.  ' + (sevens - outcomex) + '<br>' + '8.  ' + (eights - outcomex) + '<br>' + '9.  ' + (nines - outcomex) + '<br>' + '10.  ' + (tens - outcomex) + '<br>'
+                + '11.  ' + (elevens - outcomex) + '<br>' + '12.  ' + (tweles - outcomex) + '<br>' + '13.  ' + (thirtys - outcomex) + '<br>' + '14.  ' + (fourtys - outcomex) + '<br>' + '15.  ' + (fivetys - outcomex) + '<br>' +
+                '16.  ' + (sixtys - outcomex) + '<br>' + '17.  ' + (seventys - outcomex) + '<br>' + '18.  ' + (eightys - outcomex) + '<br>' + '19.  ' + (ninetys - outcomex) + '<br>' + '20.  ' + (twentys - outcomex);
+
+
+            //
+            let x_y = '1. ' + (oney - outcomey) * (ones - outcomex) + '<br>' + '2.  ' + (twoy - outcomey) * (twos - outcomex) + '<br>' + '3.  ' + (threey - outcomey) * (threes - outcomex) + '<br>' + '4.  ' + (foury - outcomey) * (fours - outcomex) + '<br>' + '5.  ' + (fivey - outcomey) * (fives - outcomex) + '<br>' +
+                '6.  ' + (sixy - outcomey) * (sixs - outcomex) + '<br>' + '7.  ' + (seveny - outcomey) * (sevens - outcomex) + '<br>' + '8.  ' + (eight - outcomey) * (eights - outcomex) + '<br>' + '9.  ' + (niney - outcomey) * (nines - outcomex) + '<br>' + '10.  ' + (teny - outcomey) * (tens - outcomex) + '<br>'
+                + '11.  ' + (eleveny - outcomey) * (elevens - outcomex) + '<br>' + '12.  ' + (tweley - outcomey) * (tweles - outcomex) + '<br>' + '13.  ' + (thirty - outcomey) * (thirtys - outcomex) + '<br>' + '14.  ' + (fourty - outcomey) * (fourtys - outcomex) + '<br>' + '15.  ' + (fivety - outcomey) * (fivetys - outcomex) + '<br>' +
+                '16.  ' + (sixty - outcomey) * (sixtys - outcomex) + '<br>' + '17.  ' + (seventy - outcomey) * (seventys - outcomex) + '<br>' + '18.  ' + (eighty - outcomey) * (eightys - outcomex) + '<br>' + '19.  ' + (ninety - outcomey) * (ninetys - outcomex) + '<br>' + '20.  ' + (twenty - outcomey) * (twentys - outcomex);
+
+
+            //
+            let x_x2 = '1. ' + (ones - outcomex) ** 2 + '<br>' + '2.  ' + (twos - outcomex) ** 2 + '<br>' + '3.  ' + (threes - outcomex) ** 2 + '<br>' + '4.  ' + (fours - outcomex) ** 2 + '<br>' + '5.  ' + (fives - outcomex) ** 2 + '<br>' +
+                '6.  ' + (sixs - outcomex) ** 2 + '<br>' + '7.  ' + (sevens - outcomex) ** 2 + '<br>' + '8.  ' + (eights - outcomex) ** 2 + '<br>' + '9.  ' + (nines - outcomex) ** 2 + '<br>' + '10.  ' + (tens - outcomex) ** 2 + '<br>'
+                + '11.  ' + (elevens - outcomex) ** 2 + '<br>' + '12.  ' + (tweles - outcomex) ** 2 + '<br>' + '13.  ' + (thirtys - outcomex) ** 2 + '<br>' + '14.  ' + (fourtys - outcomex) ** 2 + '<br>' + '15.  ' + (fivetys - outcomex) ** 2 + '<br>' +
+                '16.  ' + (sixtys - outcomex) ** 2 + '<br>' + '17.  ' + (seventys - outcomex) ** 2 + '<br>' + '18.  ' + (eightys - outcomex) ** 2 + '<br>' + '19.  ' + (ninetys - outcomex) ** 2 + '<br>' + '20.  ' + (twentys - outcomex) ** 2;
+            //
+            let yii = '1.  ' + ((ones * b_1) + b_0) + '<br>' + '2.  ' + ((twos * b_1) + b_0) + '<br>' + '3.  ' + ((threes * b_1) + b_0) + '<br>' + '4.  ' + ((fours * b_1) + b_0) + '<br>' + '5.  ' + ((fives * b_1) + b_0) + '<br>' + '6.  ' + ((sixs * b_1) + b_0) + 
+            '<br>' + '7.  ' + ((sevens * b_1) + b_0) + '<br>' + '8.  ' + ((eights * b_1) + b_0) + '<br>' + '9.  '
+                + ((nines * b_1) + b_0) + '<br>' + '10.  ' + ((tens * b_1) + b_0) + '<br>' + '11.  ' + ((elevens * b_1) + b_0) + '<br>' + '12.  ' + ((tweles * b_1) + b_0) + '<br>' + '13.  ' + ((thirtys * b_1) + b_0) + '<br>' + '14.  ' + ((fourtys * b_1) + b_0) + '<br>' + '15.  ' + ((fivetys * b_1) + b_0) + '<br>' + '16.  ' + ((sixtys * b_1) + b_0) + '<br>' + '17.  ' +
+                ((seventys * b_1) + b_0) + '<br>' + '18.  ' + ((eightys * b_1) + b_0) + '<br>' + '19.  ' + ((ninetys * b_1) + b_0) + '<br>' + '20.  ' + ((twentys * b_1) + b_0)
+
+            //
+            let uii2 = '1.  ' + (oney - ((ones * b_1) + b_0)) + '<br>' + '2.  ' + (twoy - ((twos * b_1) + b_0)) + '<br>' + '3.  ' + (threey - ((threes * b_1) + b_0)) + '<br>' + '4.  ' + (foury - ((fours * b_1) + b_0)) + '<br>' + '5.  ' + (fivey - ((fives * b_1) + b_0)) + '<br>' + '6.  ' + (sixy - ((sixs * b_1) + b_0)) + '<br>' + '7.  ' + (seveny - ((sevens * b_1) + b_0)) + '<br>' + '8.  ' + (eighty - ((eights * b_1) + b_0)) + '<br>' + '9.  '
+                + (niney - ((nines * b_1) + b_0)) + '<br>' + '10.  ' + (teny - ((tens * b_1) + b_0)) + '<br>' + '11.  ' + (eleveny - ((elevens * b_1) + b_0)) + '<br>' + '12.  ' + (tweley - ((tweles * b_1) + b_0)) + '<br>' + '13.  ' + (thirty - ((thirtys * b_1) + b_0)) + '<br>' + '14.  ' + (fourty - ((fourtys * b_1) + b_0)) + '<br>' + '15.  ' + (fivety - ((fivetys * b_1) + b_0)) + '<br>' + '16.  ' + (sixty - ((sixtys * b_1) + b_0)) + '<br>' + '17.  ' +
+                (seventy - ((seventys * b_1) + b_0)) + '<br>' + '18.  ' + (eighty - ((eightys * b_1) + b_0)) + '<br>' + '19.  ' + (ninety - ((ninetys * b_1) + b_0)) + '<br>' + '20.  ' + (twenty - ((twentys * b_1) + b_0))
+
+           // 
+            let yi_yii =  '1. ' + (oney - outcomey)**2 + '<br>' + '2.  ' + (twoy - outcomey)**2 + '<br>' + '3.  ' + (threey - outcomey)**2 + '<br>' + '4.  ' + (foury - outcomey)**2 + '<br>' + '5.  ' + (fivey - outcomey)**2 + '<br>' +
+                '6.  ' + (sixy - outcomey)**2 + '<br>' + '7.  ' + (seveny - outcomey)**2 + '<br>' + '8.  ' + (eight - outcomey)**2 + '<br>' + '9.  ' + (niney - outcomey)**2 + '<br>' + '10.  ' + (teny - outcomey)**2 + '<br>'
+                + '11.  ' + (eleveny - outcomey)**2 + '<br>' + '12.  ' + (tweley - outcomey)**2 + '<br>' + '13.  ' + (thirty - outcomey)**2 + '<br>' + '14.  ' + (fourty - outcomey)**2 + '<br>' + '15.  ' + (fivety - outcomey)**2 + '<br>' +
+                '16.  ' + (sixty - outcomey)**2 + '<br>' + '17.  ' + (seventy - outcomey)**2 + '<br>' + '18.  ' + (eighty - outcomey)**2 + '<br>' + '19.  ' + (ninety - outcomey)**2 + '<br>' + '20.  ' + (twenty - outcomey)**2;
+
+
+            // 
+            
+            let y_yii =  '1. ' + ( ((ones * b_1) + b_0) - outcomey)**2 + '<br>' + '2.  ' + (  ((twos * b_1) + b_0)- outcomey)**2 + '<br>' + '3.  ' + (((threes * b_1) + b_0)- outcomey)**2 + '<br>' + '4.  ' + (((fours * b_1) + b_0) - outcomey)**2 + '<br>' + '5.  ' + (((fives * b_1) + b_0) - outcomey)**2 + '<br>' +
+                '6.  ' + (((sixs * b_1) + b_0) - outcomey)**2 + '<br>' + '7.  ' + (((sevens * b_1) + b_0) - outcomey)**2 + '<br>' + '8.  ' + (((eights * b_1) + b_0) - outcomey)**2 + '<br>' + '9.  ' + ( ((nines * b_1) + b_0)  - outcomey)**2 + '<br>' + '10.  ' + (((tens * b_1) + b_0) - outcomey)**2 + '<br>'
+                + '11.  ' + (  ((elevens * b_1) + b_0) - outcomey)**2 + '<br>' + '12.  ' + (((tweles * b_1) + b_0)  - outcomey)**2 + '<br>' + '13.  ' + (((thirtys * b_1) + b_0) - outcomey)**2 + '<br>' + '14.  ' + (((fourtys * b_1) + b_0) - outcomey)**2 + '<br>' + '15.  ' + (((fivetys * b_1) + b_0)  - outcomey)**2 + '<br>' +
+                '16.  ' + (((sixtys * b_1) + b_0) - outcomey)**2 + '<br>' + '17.  ' + (  ((seventys * b_1) + b_0)- outcomey)**2 + '<br>' + '18.  ' + (((eightys * b_1) + b_0) - outcomey)**2 + '<br>' + '19.  ' + (((ninetys * b_1) + b_0) - outcomey)**2 + '<br>' + '20.  ' + (((twentys * b_1) + b_0)- outcomey)**2;
+
+            //
+            let ui_2 = '1.  ' + (oney - ((ones * b_1) + b_0))**2 + '<br>' + '2.  ' + (twoy - ((twos * b_1) + b_0))**2 + '<br>' + '3.  ' + (threey - ((threes * b_1) + b_0))**2 + '<br>' + '4.  ' + (foury - ((fours * b_1) + b_0))**2 + '<br>' + '5.  ' + (fivey - ((fives * b_1) + b_0))**2 + '<br>' + '6.  ' + (sixy - ((sixs * b_1) + b_0))**2 + '<br>' + '7.  ' + (seveny - ((sevens * b_1) + b_0))**2 + '<br>' + '8.  ' + (eighty - ((eights * b_1) + b_0))**2 + '<br>' + '9.  '
+                + (niney - ((nines * b_1) + b_0))**2 + '<br>' + '10.  ' + (teny - ((tens * b_1) + b_0)) **2+ '<br>' + '11.  ' + (eleveny - ((elevens * b_1) + b_0))**2 + '<br>' + '12.  ' + (tweley - ((tweles * b_1) + b_0))**2 + '<br>' + '13.  ' + (thirty - ((thirtys * b_1) + b_0)) **2+ '<br>' + '14.  ' + (fourty - ((fourtys * b_1) + b_0))**2 + '<br>' + '15.  ' + (fivety - ((fivetys * b_1) + b_0)) **2+ '<br>' + '16.  ' + (sixty - ((sixtys * b_1) + b_0))**2 + '<br>' + '17.  ' +
+                (seventy - ((seventys * b_1) + b_0))**2 + '<br>' + '18.  ' + (eighty - ((eightys * b_1) + b_0))**2+ '<br>' + '19.  ' + (ninety - ((ninetys * b_1) + b_0))**2 + '<br>' + '20.  ' + (twenty - ((twentys * b_1) + b_0))**2
+
+
+
+
+
+
+            document.getElementById('outcome').innerHTML = 'X = ' + outcomex
+
+
+            document.getElementById('outcomes').innerHTML = 'Y = ' + outcomey
+
+            document.getElementById('y-y').innerHTML = y_y
+            document.getElementById('x-x').innerHTML = x_x
+            document.getElementById('x-y').innerHTML = x_y
+            document.getElementById('x-x2').innerHTML = x_x2
+            document.getElementById('y-i').innerHTML = yii
+            document.getElementById('uii').innerHTML = uii2
+            document.getElementById('yi-yii').innerHTML = yi_yii
+            document.getElementById('y-yii2').innerHTML = y_yii
+            document.getElementById('uii2').innerHTML = ui_2
+
+            
+     
+        
+         
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>
