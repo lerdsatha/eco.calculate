@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="caculate">
+    <meta name="student " content="lerdsathaphone inthilath">
+    <meta name="keywords" conten="ຄິດໄລ່">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>bmi calculate</title>
+    <link rel="shortcut icon" type="image/png" href='favicon.ico'>
+    <style>
+        #h1 {
+            text-align: center;
+            font-family: phetsarath OT;
+            width: 100%;
+            border: 2px solid;
+            background-color: rgb(255, 255, 255);
+            font-size: 17px;
+
+        }
+
+        body {
+            background-color: rgb(241, 241, 241);
+        }
+
+        #head {
+            font-family: phetsarath OT;
+            border: 2px solid;
+            font-weight: bold;
+            width: 60%;
+            height: 60%;
+            padding: 9px;
+            margin: 20px;
+            font-size: 17px;
+               background-color: rgb(132, 178, 178);
+            border-radius: 8px;
+
+        }
+
+        #submit {
+            border-radius: 4px;
+            text-transform: uppercase;
+            background-color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        input {
+            font-family: phetsarath OT;
+            font-size: 17px;
+            width: 70%;
+            height: 20%;
+        }
+
+        #calculate {
+            font-family: phetsarath OT;
+            font-size: 17px;
+            font-weight: bold;
+            border: 2px solid;
+            width: 60%;
+            height: 60%;
+            margin: 40px;
+            text-align: left;
+            padding: 20px;
+            background-color: rgb(132, 178, 178);
+            border-radius: 15px;
+        }
+        #calculate #centre{
+            text-align: center;
+        }
+        #height{
+            border-radius: 20px;
+            border: none;
+
+        }
+        #weight{
+            border-radius: 20px;
+            border: none;
+
+        }
+        
+        @media screen and (max-width :200) {
+            #head {
+        
+            width: 450px;
+            height: 150px;
+            font-size: 15px;
+     
+        }
+        
+         }
+    </style>
+</head>
+
+<body>
+    <p id="h1">ຄິດໄລ່ດັດສະນີມວນຮ່າງກາຍ</p>
+    <div id="head">
+        <label># ດັດສະນີມວນຮ່າງກາຍ (BMI)</label>
+        <p> - ແມ່ນໃຊ້ສຳລັບຄິດໄລ່ເພື່ອຫານ້ຳໜັກໂຕ ແລະ ປະມານລະດັບໄຂມັນໃນຮ່າງກາຍໂດຍໃຊ້ນຳ້ໜັກໂຕ ແລະ ສ່ວນສູງ
+        </p>
+    </div>
+    <div id="calculate">
+        <label id="centre">ຄິດໄລ່(BMI)</label><br><br>
+        <label >ສວ່ນສູງຂອງເຈົ້າ (cm)</label><br>
+        <input type="text" id="height"><br>
+        <label >ນ້ຳໜັກຂອງເຈົ້າ (kg)</label><br>
+        <input type="text" id="weight" ><br><br>
+        <button id="submit">submit</button><br><br>
+        <label id="outcome"></label>
+    </div>
+    <script>
+        document.getElementById('submit').onclick = function () {
+            let wet = document.getElementById('weight').value
+            let hi = document.getElementById('height').value
+            let result = document.getElementById('outcome')
+            wet = Number(wet)
+            hi = Number(hi)
+            let a = wet / ((hi / 100) ** 2)
+            if (a <= 18.5) {
+                document.getElementById('outcome').innerHTML = 'ຄ່າດັດສະນີຮ່າງກາຍແມ່ນ : ' + a + '<br>' + '(ນ້ຳໜັກຕຳ່ກວ່າເກນ)'
+            }
+            else if (a <= 22.9) {
+                document.getElementById('outcome').innerHTML = 'ຄ່າດັດສະນີຮ່າງກາຍແມ່ນ : ' + a + '<br>' + '(ນ້ຳໜັກສົມສ່ວນ)'
+            }
+            else if (a <= 24.9) {
+                document.getElementById('outcome').innerHTML = 'ຄ່າດັດສະນີຮ່າງກາຍແມ່ນ : ' + a + '<br>' + '(ນ້ຳໜັກເກີນມາດຖານ)'
+            }
+            else if (a <= 29.9) {
+                document.getElementById('outcome').innerHTML = 'ຄ່າດັດສະນີຮ່າງກາຍແມ່ນ : ' + a + '<br>' + '(ນ້ຳໜັກຢູ່ໃນເກນມີນຳ້ມີນວນ)'
+            }
+            else if (a => 29.9) {
+                document.getElementById('outcome').innerHTML = 'ຄ່າດັດສະນີຮ່າງກາຍແມ່ນ : ' + a + '<br>' + '(ນ້ຳໜັກຢູ່ໃນເກນອ້ວນ)'
+            }
+            else {
+                document.getElementById('outcome').innerHTML = 'ກະລຸນາເຕີ່ມຂໍ້ມູນ'
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>
