@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO(10 data)</title>
+    <link rel="shortcut icon" type="image/png" href='favicon.ico'>
+
+<style>
+    div {
+        display: flex;
+        justify-content: left;
+        margin: 20px;
+        padding: 10px 5px 10px 35px;
+        font-family: phetsarath OT;
+        width: 400px;
+        height: 700px;
+        border: 1px solid rgb(68, 67, 98);
+        border-radius: 5px;
+        box-shadow: 4px 7px 7px 0px rgb(228, 223, 217);
+        background-color: rgb(195, 140, 205);
+
+        flex-wrap: wrap;
+        font-size: 17px;
+
+    }
+
+    div span {
+        margin: 10px 2px 5px;
+        padding-top: 0%;
+    }
+
+    div #harn {
+        width: 200px;
+        height: 30px;
+        margin-top: 5px;
+        font-family: phetsarath OT;
+        margin-left: 80px;
+
+
+    }
+
+    button {
+        margin-bottom: 10px;
+        margin-left: 200px;
+        width: 150px;
+        height: 50px;
+        border-radius: 5PX;
+        background-color: aliceblue;
+        font-family: phetsarath OT;
+
+
+
+    }
+
+    div.luam {
+        min-width: 100%;
+        background-color: aliceblue;
+        margin: 0px;
+        min-height: 100%;
+        height: 100%;
+
+    }
+
+    span#xx {
+        width: 200px;
+        height: 120px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+
+
+    }
+
+    span#yy {
+        width: 200px;
+        height: 120px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+
+
+    }
+
+    span#y-yi {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+
+
+    }
+
+    span#x-xi {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+
+
+    }
+
+    span#x-yi {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+
+
+    }
+
+    span#x-xi2 {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+
+
+    }
+
+    .u {
+        width: 100px;
+
+        font-family: phetsarath OT;
+
+    }
+
+    span#yi- {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+    }
+
+    span#ui {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+    }
+
+    span#yi-y2 {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+    }
+
+
+    span#y-yi2 {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+    }
+
+    span#ui2 {
+        width: 250px;
+        height: 570px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+        
+    }
+    span#BI {
+        width: 250px;
+        height: 200px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+    }
+    span#BO {
+        width: 250px;
+        height: 200px;
+        border: 1px solid rgb(68, 67, 98);
+        text-align: center;
+
+    }
+</style>
+</head>
+
+
+<body>
+    <div>
+        <span class="y">
+            <p>ຈຳນວນ y</p>
+            <input type="text" id="1y" placeholder="1"><br><br>
+            <input type="text" id="2y" placeholder="2"><br><br>
+            <input type="text" id="3y" placeholder="3"><br><br>
+            <input type="text" id="4y" placeholder="4"><br><br>
+            <input type="text" id="5y" placeholder="5"><br><br>
+            <input type="text" id="6y" placeholder="6"><br><br>
+            <input type="text" id="7y" placeholder="7"><br><br>
+            <input type="text" id="8y" placeholder="8"><br><br>
+            <input type="text" id="9y" placeholder="9"><br><br>
+            <input type="text" id="10y" placeholder="10"><br><br>
+ 
+
+
+
+        </span>
+
+        <span class="x">
+            <p>ຈຳນວນ x</p>
+            <input type="text" id="1x" placeholder="1"><br><br>
+            <input type="text" id="2x" placeholder="2"><br><br>
+            <input type="text" id="3x" placeholder="3"><br><br>
+            <input type="text" id="4x" placeholder="4"><br><br>
+            <input type="text" id="5x" placeholder="5"><br><br>
+            <input type="text" id="6x" placeholder="6"><br><br>
+            <input type="text" id="7x" placeholder="7"><br><br>
+            <input type="text" id="8x" placeholder="8"><br><br>
+            <input type="text" id="9x" placeholder="9"><br><br>
+            <input type="text" id="10x" placeholder="10"><br><br>
+
+
+
+
+        </span><br>
+
+
+
+
+        <input type="text" id="harn" placeholder="ຈຳນວນ (n)"><br>
+
+    </div>
+    <button id="submit">ສົ່ງຄຳຕອບ
+    </button><br>
+  
+    
+    <div class="luam">
+        <span id="xx">
+            <label>ຄ່າສະເລ່ຍ(xi) </label><br>
+            <label id="outcome"></label>
+        </span>
+        <span id="yy">
+            <label>ຄ່າສະເລ່ຍ(yi) </label><br>
+            <label id="outcomes"></label><br>
+        </span>
+        <span id="x-xi">
+            <label>(xi - x_) </label><br>
+            <label id="x-x"></label>
+        </span>
+
+        <span id="y-yi">
+            <label>(yi - y_) </label><br>
+            <label id="y-y"></label>
+        </span>
+
+        
+        <span id="x-yi">
+            <label>(xi - x_) * (yi - y_)</label><br>
+            <label id="x-y"></label>
+
+        </span>
+        <span id="x-xi2">
+            <label>(xi- x_)**2 </label><br>
+            <label id="x-x2"></label>
+        </span>
+        <span id="yi-y2">
+            <label>(yi - y_)**2 </label><br>
+            <label id='yi-yii'></label>
+        </span>
+        <span id="yi-">
+            <label>yi' </label><br>
+            <label id='y-i'></label>
+        </span>
+        <span id="ui">
+            <label>ui' </label><br>
+            <label id='uii'></label>
+        </span>
+        <span id="ui2">
+            <label>ui'**2 </label><br>
+            <label id='uii2'></label>
+        </span>
+        <span id="y-yi">
+            <label>(yi'-y_) </label><br>
+            <label id='yi-yi'></label>
+        </span>
+        
+        <span id="y-yi2">
+            <label>(yi'-y_)**2 </label><br>
+            <label id='y-yii2'></label>
+        </span>
+
+
+
+        
+    
+    <span id="BI">
+        <label>ຄ່າ B1</label><br>
+        <label id="B1"></label>
+    </span>
+    <span id="BO">
+        <label>ຄ່າ B0</label><br>
+        <label id="B0"></label>
+    </span>
+      
+        
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.getElementById('submit').onclick = function () {
+            let outcomesy = Number(outcomes)
+
+            let ones = document.getElementById('1x').value;
+            ones = Number(ones)
+            let twos = document.getElementById('2x').value;
+            twos = Number(twos)
+            let threes = document.getElementById('3x').value;
+            threes = Number(threes)
+            let fours = document.getElementById('4x').value;
+            fours = Number(fours)
+            let fives = document.getElementById('5x').value;
+            fives = Number(fives)
+            let sixs = document.getElementById('6x').value;
+            sixs = Number(sixs)
+            let sevens = document.getElementById('7x').value;
+            sevens = Number(sevens)
+            let eights = document.getElementById('8x').value;
+            eights = Number(eights)
+            let nines = document.getElementById('9x').value;
+            nines = Number(nines)
+            let tens = document.getElementById('10x').value;
+            tens = Number(tens)
+       
+
+
+
+
+            //
+
+            let oney = document.getElementById('1y').value;
+            oney = Number(oney)
+            let twoy = document.getElementById('2y').value;
+            twoy = Number(twoy)
+            let threey = document.getElementById('3y').value;
+            threey = Number(threey)
+            let foury = document.getElementById('4y').value;
+            foury = Number(foury)
+            let fivey = document.getElementById('5y').value;
+            fivey = Number(fivey)
+            let sixy = document.getElementById('6y').value;
+            sixy = Number(sixy)
+            let seveny = document.getElementById('7y').value;
+            seveny = Number(seveny)
+            let eight = document.getElementById('8y').value;
+            eight = Number(eight)
+            let niney = document.getElementById('9y').value;
+            niney = Number(niney)
+            let teny = document.getElementById('10y').value;
+            teny = Number(teny)
+   
+
+            let harns = document.getElementById('harn').value;
+            harns = Number(harns)
+            //
+
+
+            let b_11 = document.getElementById('B1').value;
+            b_11 = Number(b_11)
+            let b_00 = document.getElementById('B0').value;
+            b_00 = Number(b_00)
+
+            //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+            let outcomex = (ones + twos + threes + fours + fives + sixs + sevens + eights + nines + tens ) / harns;
+            //
+            let outcomey = (oney + twoy + threey + foury + fivey + sixy + seveny + eight + niney + teny ) / harns;
+            //
+
+                let b_1 =  ((((oney - outcomey) * (ones - outcomex) + (twoy - outcomey) * (twos - outcomex) ) + ((threey - outcomey) * (threes - outcomex) + (foury - outcomey) * (fours - outcomex) )+((fivey - outcomey) * (fives - outcomex) +
+                (sixy - outcomey) * (sixs - outcomex) ) +( (seveny - outcomey) * (sevens - outcomex) + (eight - outcomey) * (eights - outcomex) )+ ( (niney - outcomey) * (nines - outcomex) +  (teny - outcomey) * (tens - outcomex))) / 
+                  ( ( (ones - outcomex) ** 2  + (twos - outcomex) ** 2) + ((threes - outcomex) ** 2 +  (fours - outcomex) ** 2 )+  ((fives - outcomex) ** 2 +
+               (sixs - outcomex) ** 2 )+ ( (sevens - outcomex) ** 2 +  (eights - outcomex) ** 2 )+  ((nines - outcomex) ** 2 + (tens - outcomex) ** 2 )))
+
+                let b_0 = (outcomey )- (b_1* outcomex)
+            //
+            
+            let y_y =  + (oney - outcomey) + '<br>' +  + (twoy - outcomey) + '<br>' +  + (threey - outcomey) + '<br>' +  + (foury - outcomey) + '<br>' +  + (fivey - outcomey) + '<br>' +
+                + (sixy - outcomey) + '<br>' +  + (seveny - outcomey) + '<br>' +  + (eight - outcomey) + '<br>' + + (niney - outcomey) + '<br>' + '10.  ' + (teny - outcomey) + '<br>'
+               
+            //
+            let x_x =  + (ones - outcomex) + '<br>' + + (twos - outcomex) + '<br>' +  + (threes - outcomex) + '<br>' +  + (fours - outcomex) + '<br>' +  + (fives - outcomex) + '<br>' +
+                 + (sixs - outcomex) + '<br>' +  + (sevens - outcomex) + '<br>' +  + (eights - outcomex) + '<br>' +  + (nines - outcomex) + '<br>' +  + (tens - outcomex) + '<br>'
+              
+
+            //
+            let x_y =  + (oney - outcomey) * (ones - outcomex) + '<br>' +  + (twoy - outcomey) * (twos - outcomex) + '<br>' +  + (threey - outcomey) * (threes - outcomex) + '<br>' +  + (foury - outcomey) * (fours - outcomex) + '<br>' + + (fivey - outcomey) * (fives - outcomex) + '<br>' +
+                 + (sixy - outcomey) * (sixs - outcomex) + '<br>' +  + (seveny - outcomey) * (sevens - outcomex) + '<br>' +  + (eight - outcomey) * (eights - outcomex) + '<br>' +  + (niney - outcomey) * (nines - outcomex) + '<br>' +  + (teny - outcomey) * (tens - outcomex) + '<br>'
+             
+            
+            
+
+            //
+            let x_x2 =(ones - outcomex) ** 2 + '<br>'  + (twos - outcomex) ** 2 + '<br>'  + (threes - outcomex) ** 2 + '<br>'  + (fours - outcomex) ** 2 + '<br>' + (fives - outcomex) ** 2 + '<br>' +
+               (sixs - outcomex) ** 2 + '<br>' +  (sevens - outcomex) ** 2 + '<br>' + (eights - outcomex) ** 2 + '<br>' + (nines - outcomex) ** 2 + '<br>' + (tens - outcomex) ** 2 + '<br>'
+             //  
+            let yii =  ((ones * b_1) + b_0) + '<br>' + ((twos * b_1) + b_0) + '<br>' + ((threes * b_1) + b_0) + '<br>' + ((fours * b_1) + b_0) + '<br>' +  ((fives * b_1) + b_0) + '<br>' +  ((sixs * b_1) + b_0) + 
+            '<br>' +  ((sevens * b_1) + b_0) + '<br>' +  ((eights * b_1) + b_0) + '<br>' + 
+                + ((nines * b_1) + b_0) + '<br>' +((tens * b_1) + b_0);
+            //
+            let uii2 =  (oney - ((ones * b_1) + b_0)) + '<br>' + (twoy - ((twos * b_1) + b_0)) + '<br>' +  (threey - ((threes * b_1) + b_0)) + '<br>' +(foury - ((fours * b_1) + b_0)) + '<br>' + 
+            (fivey - ((fives * b_1) + b_0)) + '<br>' + (sixy - ((sixs * b_1) + b_0)) + '<br>' + (seveny - ((sevens * b_1) + b_0)) + '<br>' +  (eight - ((eights * b_1) + b_0)) + '<br>' 
+                + (niney - ((nines * b_1) + b_0)) + '<br>' + (teny - ((tens * b_1) + b_0)) ;
+
+           // 
+            let yi_yii =  (oney - outcomey)**2 + '<br>' +  (twoy - outcomey)**2 + '<br>' +  (threey - outcomey)**2 + '<br>' +  (foury - outcomey)**2 + '<br>' + (fivey - outcomey)**2 + '<br>' +
+                (sixy - outcomey)**2 + '<br>' + (seveny - outcomey)**2 + '<br>' + (eight - outcomey)**2 + '<br>' + (niney - outcomey)**2 + '<br>' +  (teny - outcomey)**2 + '<br>'
+              
+            // 
+            
+            let y_yii =  ( ((ones * b_1) + b_0) - outcomey)**2 + '<br>' + (  ((twos * b_1) + b_0)- outcomey)**2 + '<br>' + (((threes * b_1) + b_0)- outcomey)**2 + '<br>' +  (((fours * b_1) + b_0) - outcomey)**2 + '<br>' + (((fives * b_1) + b_0) - outcomey)**2 + '<br>' +
+             (((sixs * b_1) + b_0) - outcomey)**2 + '<br>' + (((sevens * b_1) + b_0) - outcomey)**2 + '<br>' +  (((eights * b_1) + b_0) - outcomey)**2 + '<br>' +  ( ((nines * b_1) + b_0)  - outcomey)**2 + '<br>'+ (((tens * b_1) + b_0) - outcomey)**2 + '<br>'
+            
+
+            //
+            let ui_2 = (oney - ((ones * b_1) + b_0))**2 + '<br>' + (twoy - ((twos * b_1) + b_0))**2 + '<br>' + (threey - ((threes * b_1) + b_0))**2 + '<br>' + (foury - ((fours * b_1) + b_0))**2 + '<br>' +  (fivey - ((fives * b_1) + b_0))**2 + '<br>' +(sixy - ((sixs * b_1) + b_0))**2 + '<br>' +  (seveny - ((sevens * b_1) + b_0))**2 + '<br>' + (eight - ((eights * b_1) + b_0))**2 + '<br>' 
+                + (niney - ((nines * b_1) + b_0))**2 + '<br>' +  (teny - ((tens * b_1) + b_0)) **2;
+                //
+            let   yi_yy = ( ((ones * b_1) + b_0) - outcomey) + '<br>' + (  ((twos * b_1) + b_0)- outcomey) + '<br>' +  (((threes * b_1) + b_0)- outcomey) + '<br>' +  (((fours * b_1) + b_0) - outcomey)+ '<br>' +  (((fives * b_1) + b_0) - outcomey) + '<br>' +
+               (((sixs * b_1) + b_0) - outcomey) + '<br>' +  (((sevens * b_1) + b_0) - outcomey) + '<br>' + (((eights * b_1) + b_0) - outcomey) + '<br>' +  ( ((nines * b_1) + b_0)  - outcomey) + '<br>' + (((tens * b_1) + b_0) - outcomey) + '<br>'
+              
+//
+             
+document.getElementById('outcome').innerHTML = 'X = ' + outcomex
+
+
+document.getElementById('outcomes').innerHTML = 'Y = ' + outcomey
+           
+
+            document.getElementById('x-x').innerHTML = x_x
+            document.getElementById('y-y').innerHTML = y_y
+            document.getElementById('x-y').innerHTML = x_y
+            document.getElementById('x-x2').innerHTML = x_x2
+            document.getElementById('y-yii2').innerHTML = y_yii
+            document.getElementById('y-i').innerHTML = yii
+            document.getElementById('uii').innerHTML = uii2
+            document.getElementById('uii2').innerHTML = ui_2
+            document.getElementById('yi-yii').innerHTML = yi_yii
+            document.getElementById('yi-yi').innerHTML = yi_yy
+            document.getElementById('B1').innerHTML = b_1
+            document.getElementById('B0').innerHTML = b_0
+     
+
+            
+     
+        
+         
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>
